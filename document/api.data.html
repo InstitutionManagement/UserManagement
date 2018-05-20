@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    </head>
+    <body>
+
+        <h1>API Test Data</h1>
+
+        <p style="font-weight:bold">Route: /api/superadmin/loophole/register</p>
+        <pre class="prettyprint">
+            Details: Registers the Super Super Admins
+            Input JSON:{
+                "name":"Adarsha Das",
+                "email": "adarsha.das@outlook.com",
+                "phone": "8765766152",
+                "address": "B 102, Unitech Blossoms, Bellandur, Bangalore - 560103",
+                "username": "a0d00kc",
+                "password": "iit_EN003"
+            }
+            Output JSON: {
+                "error": null,
+                "data": {
+                    "name": "Adarsha Das",
+                    "email": "adarsha.das@outlook.com",
+                    "phone": "8765766152",
+                    "address": "B 102, Unitech Blossoms, Bellandur, Bangalore - 560103",
+                    "username": "a0d00kc",
+                    "imageUrl": "https://expressjs.com/images/express-mw.png",
+                    "privilage": [
+                        0
+                    ],
+                    "userid": "5a9fc3e21eff9131980dee16"
+                }
+            }
+        </pre>
+    <hr>
+    <p style="font-weight:bold">Route: /api/login</p>
+    <pre class="prettyprint">
+            Details: Login any user
+            Input JSON:{
+                "username": "a0d00kc",
+                "password": "iit_EN003"
+            }
+            Output JSON:{
+                "error": null,
+                "data": {
+                    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhOWZjM2UyMWVmZjkxMzE5ODBkZWUxNiIsImlhdCI6MTUyMDQyMDQ2MywiZXhwIjoxNTIwNTA2ODYzfQ.HhQOx-1xXyNLeGiOFgMe_xbzOE1azs6huzE7CeVLzuQ",
+                    "user": {
+                        "image_url": "https://expressjs.com/images/express-mw.png",
+                        "_id": "5a9fc3dc1eff9131980dee15",
+                        "name": "Adarsha Das",
+                        "email": "adarsha.das@outlook.com",
+                        "phone": "8765766152",
+                        "address": "B 102, Unitech Blossoms, Bellandur, Bangalore - 560103",
+                        "__v": 0
+                    }
+                }
+            }
+    </pre>
+    <hr>
+    <p style="font-weight:bold">Route: /api/superadmin/register</p>
+    <pre class="prettyprint">
+            Details: Registers the Super Admins
+            Input JSON:{
+                "name":"Super Admin 1",
+                "email": "superadmin1@outlook.com",
+                "phone": "8767659872",
+                "address": "Mysuru",
+                "username": "superadmin1",
+                "password": "superadmin1"
+            }
+            Output JSON:{
+                "error": null,
+                "data": {
+                    "name": "Super Admin 1",
+                    "email": "superadmin1@outlook.com",
+                    "phone": "8767659872",
+                    "address": "Mysuru",
+                    "username": "superadmin1",
+                    "imageUrl": "https://expressjs.com/images/express-mw.png",
+                    "privilage": [],
+                    "userid": "5a9fca2f59c1ea31ac9886c2"
+                }
+            }
+    </pre>
+    <hr>
+    </body>
+</html>
